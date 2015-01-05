@@ -1,12 +1,13 @@
 \documentclass[a4paper]{article}
 \usepackage[a4paper]{geometry}
 \usepackage{fancyhdr}
+\usepackage{array}
 \usepackage{fontspec}
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
 \usepackage{hyperref}
-\usepackage{xcolor}
+\usepackage{xcolor,colortbl}
 \hypersetup{
     	colorlinks,
         linkcolor={red!50!black},
@@ -113,18 +114,42 @@ Being a part/technical lead of small team outsourced to third party company name
 \section*{\LARGE{Skills}} 
 
 
-\begin{tabular}{r | p{1.6cm} | p{2cm} | p{2.8cm} | p{1.2cm} | p{1.2cm} | p{0.8cm} | p{2cm}}
-	Status & Languages & Data Store & Application & Runtime & Build & SCM & OS \\ \hline
-	Current & Java \newline Js & Cassandra \newline mySQL \newline memcached \newline RabbitMQ & Spring Integration \newline Spring Batch \newline Spring Security \newline myBatis \newline JUnit \newline JMock \newline Mockito & Tomcat & Jenkins \newline Bamboo \newline Maven & Git & GNU/Linux \newline OSX \\ \hline
-Past & --  & postgreSQL & EJB 3 \newline EJB 2.x \newline Struts \newline Freemarker \newline Tapestry \newline Jackrabbit \newline Hibernate \newline Cactus \newline Wicket & JBoss & ANT & SVN & Windows \\ \hline
-	Interests & Scala \newline Go \newline Perl & mongoDB & JOOQ & Docker & SBT & -- & --
+\begin{tabular}{| >{\centering\arraybackslash}m{1.2cm} |  >{\centering\arraybackslash}m{1.8cm} |  >{\centering\arraybackslash}m{2cm}  |  >{\centering\arraybackslash}m{2.8cm}  |  >{\centering\arraybackslash}m{1.4cm}  |  >{\centering\arraybackslash}m{1.2cm}  |  >{\centering\arraybackslash}m{0.8cm} |  >{\centering\arraybackslash}m{1.6cm}  |} \hline 
+	\cellcolor{black}\textcolor{white}{State} & \cellcolor{black}\textcolor{white}{Languages} & \cellcolor{black}\textcolor{white}{Data Store} & \cellcolor{black}\textcolor{white}{Application} & \cellcolor{black}\textcolor{white}{Runtime} & \cellcolor{black}\textcolor{white}{Build} & \cellcolor{black}\textcolor{white}{SCM} & \cellcolor{black}\textcolor{white}{OS} \\ \hline  
+	      & 	  & 	       &             &         &       &     &    \\
+	Current & Java \newline Js \newline SQL \newline & Cassandra \newline mySQL \newline memcached \newline RabbitMQ & Spring Integration \newline Spring Batch \newline Spring Security \newline myBatis \newline JUnit \newline JMock \newline Mockito \newline & Tomcat & Jenkins \newline Bamboo \newline Maven & Git & GNU/Linux \newline OSX \\ \hline
+	& & & & & & & \\
+Past & --  & postgreSQL \newline Jackrabbit & EJB 3 \newline EJB 2.x \newline Struts \newline Freemarker \newline Tapestry \newline Hibernate \newline Cactus \newline Wicket \newline & JBoss & ANT & SVN & Windows \\ \hline
+	    & & & & & & & \\
+	Non \newline Proff \newline &  Scala \newline Go \newline Perl \newline & mongoDB & JOOQ & Docker & SBT & -- & -- \\ \hline
 \end{tabular}
 
-\subsection*{\LARGE{Certifications}}
-
+\subsection*{\LARGE{Certifications and Courses}}  
+\begin{tabular}{|  >{\centering\arraybackslash}m{3cm}  |  >{\centering\arraybackslash}m{4cm}  |  >{\centering\arraybackslash}m{8cm}  |} \hline
+	\cellcolor{black}\textcolor{white}{Date} & \cellcolor{black}\textcolor{white}{Issuer} & \cellcolor{black}\textcolor{white}{Type} \\ \hline
+	07/2014 & Coursera &  Core Concepts in Data Analysis \\
+	02/2014 & Coursera &  Computing for Data Analysis \\
+	06/2013 & 10Gen & Mongo DB M102 MongoDB for DBAs \\
+	04/2013 & 10Gen & Mongo DB M101J MongoDB for Java developers \\
+	12/2012 & Coursera & Functional Programming Principles in Scala \\
+	07/2007 & Sun Microsystems & SCJP 5 (CX-310- 055) \\
+	12/2005 & Microsoft & MCP (70-293) \\
+	\hline
+\end{tabular}
 
 \section*{\LARGE{Education}} 
+\subsection*{2008 - 2010 \href{http://www.agh.edu.pl/en/}{AGH University of Science and Technology}}
+\subsubsection*{Degree B.Sc.}
+\subsubsection*{Field of Study: Information Technology (M.Sc.)}
+\subsection*{2004 - 2008 \href{http://www.wszib.edu.pl/index.php?change_lang=en}{University of Banking and Management}}
+\subsubsection*{Field of study: Information Technology (B.Sc.)} 
 
+\section*{More}
+
+\begin{tabular}{c|c}  
+	\cellcolor{black}\textcolor{white}{LinkedIn} & \cellcolor{black}\textcolor{white}{Home Page} \\
+	\includegraphics[scale=0.4]{qrcode_lnkdn.png} &  \includegraphics[scale=0.4]{qrcode_hme.png} 
+\end{tabular}
 
 \end{document}
 
